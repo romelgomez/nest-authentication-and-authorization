@@ -6,13 +6,13 @@ import { JwtAuthGuard } from './auth.jwt.guard';
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
-  @Get('auth/access-token')
+  @Get('/access-token')
   async sign() {
     return this.authService.sign();
   }
 
   @UseGuards(JwtAuthGuard)
-  @Post('auth/private')
+  @Post('/private')
   async private() {
     return {
       message: 'This is a private route',
