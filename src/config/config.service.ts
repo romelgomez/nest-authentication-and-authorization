@@ -20,6 +20,7 @@ export class AppConfigService {
     this.environmentConfig = {
       environment,
       port: parseInt(this.getEnvVal(ProcessEnvEnum.PORT), 10) || 3001,
+      version: this.getEnvVal(ProcessEnvEnum.VERSION),
       database: {
         type: DatabaseTypeEnum.Postgres,
         host: this.getEnvVal(ProcessEnvEnum.DATABASE_HOST),
@@ -41,7 +42,7 @@ export class AppConfigService {
     };
   }
 
-  private getEnvVal(key: ProcessEnvEnum): string {
+  public getEnvVal(key: ProcessEnvEnum): string {
     const value = this.config.get<string>(key);
 
     if (!value) {

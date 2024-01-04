@@ -10,6 +10,7 @@ export enum DatabaseTypeEnum {
 
 export type EnvironmentConfig = {
   environment: EnvironmentEnum;
+  version: string;
   port: number;
   database: {
     type: DatabaseTypeEnum;
@@ -34,6 +35,7 @@ export type EnvironmentConfig = {
 export enum ProcessEnvEnum {
   NODE_ENV = 'NODE_ENV',
   PORT = 'PORT',
+  VERSION = 'VERSION',
 
   DATABASE_HOST = 'DATABASE_HOST',
   DATABASE_PORT = 'DATABASE_PORT',

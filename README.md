@@ -10,6 +10,9 @@ $ yarn install
 ## Running the app
 
 ```bash
+$ . ./environments_example.sh 
+
+
 # development
 $ yarn run start
 
