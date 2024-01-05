@@ -1,6 +1,5 @@
 # Notes on how to do NestJS authentication and authorization
 
-
 ## Installation
 
 ```bash
@@ -10,7 +9,7 @@ $ yarn install
 ## Running the app
 
 ```bash
-$ . ./environments_example.sh 
+$ . ./environments_example.sh
 
 
 # development
@@ -37,7 +36,6 @@ $ yarn run test:cov
 
 [MIT licensed](LICENSE)
 
-
 ## Demo
 
 docs: https://docs.nestjs.com/recipes/passport
@@ -62,7 +60,6 @@ hit `http://localhost:3001/v0.0.1/access-token` or
 `curl -X GET http://localhost:3001/v0.0.1/access-token`
 
 you will get:
-
 
 ```
 {
